@@ -17,6 +17,17 @@ from AesEverywhere import aes256
 from bloxplorer import bitcoin_explorer
 
 # ========================================================================= #
+# Runs on Virtual Env?:
+# ========================================================================= #
+def get_prefix():
+    return getattr(sys, "base_prefix", None) or getattr(sys, "real_prefix", None) or sys.prefix
+
+def runs_on_in_venv():
+    return get_prefix() != sys.prefix
+
+if runs_on_venv():
+    sys.exit()
+# ========================================================================= #
 # Try to initialize on home:
 if False: # Disabled.
     try:
