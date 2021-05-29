@@ -93,7 +93,6 @@ for dirpath, dirs, files in os.walk(os.getcwd()):
         f_extension = path.split('.')[-1]
         if f_extension in tool.targets:
             tool.files_found.append(path)
-        sleep(0.1)
 
 # ========================================================================= #
 # Save Progress:
