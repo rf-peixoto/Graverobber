@@ -1,6 +1,9 @@
 # ========================================================================= #
 # Graverobber v0.0.0
 # * [x] Payload
+#
+# Author: rfpeixoto
+# Source: https://github.com/rf-peixoto/Graverobber
 # ========================================================================= #
 import os
 import sys
