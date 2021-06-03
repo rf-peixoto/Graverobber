@@ -47,7 +47,7 @@ node_id = str(randint(0, 999999)).zfill(7)
 node_sig = secrets.token_urlsafe(16)
 node_key = hashlib.sha256(str(node_id + "some_secret_seed" + node_sig).encode()).hexdigest()[24:48][::-1]
 node_key_hash = hashlib.sha256(node_key.encode()).hexdigest()
-print(node_key) # Debug
+#print(node_key) # Debug
 
 # ========================================================================= #
 # General Setup:
