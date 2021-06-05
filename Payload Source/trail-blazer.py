@@ -1,13 +1,15 @@
 import subprocess
 import platform
 import requests
+import os
 
 # Detect Operational System
 platform_os = platform.system()
+platform_name = os.name
 # Set Filename to Download and Execcute:
-if platform_os == "Linux":
+if platform_os == "Linux" or platform_name == "posix":
     filename = "Linux Executable Name"
-elif platform_os == "Windows":
+elif platform_os == "Windows" or platform_name == "nt":
     filename = "Windows Exe Name.exe"
 
 # Donwload:
