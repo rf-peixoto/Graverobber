@@ -173,7 +173,7 @@ def decrypt(key):
         try:
             # Ignore this file and progress log:
             if f != sys.argv[0] and f != "node_{0}.txt".format(node_id):
-                # Read original data and encrypt:
+                # Read original data and decrypt:
                 with open(f, "rb") as fl:
                     data = fl.read()
                 tmp_key = key[::-1] + f[::-1]
