@@ -51,7 +51,7 @@ if int(node_id) % 2 == 0:
 else:
     node_key = hashlib.sha256(str(node_id + "some_secret_odd_seed" + node_sig).encode()).hexdigest()[24:48][::-1]
 node_key_hash = hashlib.sha256(node_key.encode()).hexdigest()
-print(node_key) # Debug
+#print(node_key) # Debug
 
 # ========================================================================= #
 # General Setup:
