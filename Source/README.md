@@ -4,4 +4,4 @@
 
 **locksmith.py**: This is a simple helper utility to derive keys from node identifiers and signatures (node_id, node_sig). Usage:
 
-```python locksmith.py node_id node_sig```
+```python locksmith.py [node_id] [node_sig]```
