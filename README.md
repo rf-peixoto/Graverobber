@@ -1,4 +1,4 @@
-![Graverobber](https://i.imgur.com/dUCfPsG.png)
+![Graverobber](https://github.com/rf-peixoto/Graverobber/blob/main/Resources/Images/logo.png)
 
 [![rf-peixoto - Graverobber](https://img.shields.io/static/v1?label=rf-peixoto&message=Graverobber&color=blue&logo=github)](https://github.com/rf-peixoto/Graverobber)
 [![stars - Graverobber](https://img.shields.io/github/stars/rf-peixoto/Graverobber?style=social)](https://github.com/rf-peixoto/Graverobber)
