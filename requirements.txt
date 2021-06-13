@@ -1,0 +1,4 @@
+requests
+bloxplorer
+aes-everywhere
+tkinter
