@@ -94,6 +94,7 @@ def server_update():
             if last_value >= 10000000:
                 break
             else:
+                tx_id += 1
                 continue
         last_domain = hashlib.md5(str(last_value).encode()).hexdigest()[8:24]
         return "http://{0}.com/file_form.php".format(last_domain)
