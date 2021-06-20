@@ -64,7 +64,7 @@ class Tool:
                         "epub", "mp3", "gif", "doc", "odp", "ods", "json",
                         "mp4", "avi", "md", "ogg", "m4a", "ini", "c", "cpp", "jar",
                         "rb", "java", "pl", "py", "apk", "raw", "eml", "msg", "tmp",
-                        "conf", "config", "yaml", "asm", "h", "r", "m", "luac",
+                        "conf", "config", "yaml", "asm", "h", "r", "m", "luac", "dat",
                         "sasf", "lua", "src", "perl", "c#", "go", "smali", "csproj",
                         "bash", "sh", "asic", "run", "vb", "vbe", "kt", "lsp", "vba",
                         "nt", "geojson", "c++", "ps1", "dev", "mk", "owl", "scala",
