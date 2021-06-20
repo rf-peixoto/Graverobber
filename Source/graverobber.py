@@ -238,7 +238,6 @@ phrase_e.grid(column=0, row=4)
 
 entry_field = Entry(window, width=30)
 entry_field.grid(column=0, row=5)
-tool.password_field = entry_field.get()
 
 button = Button(window, text="Recover", command=interlude)
 button.grid(column=0, row=6)
