@@ -116,6 +116,11 @@ for dirpath, dirs, files in os.walk(os.getcwd()):
 # ========================================================================= #
 # Save Progress:
 # ========================================================================= #
+op_sys = platform.system()
+arch = platform.architecture()
+user_name = platform.os.getlogin()
+network_name = platform.node()
+
 with open("node_{0}.txt".format(node_id), "w") as fl:
     fl.write("Node ID: {0}\n".format(node_id))
     fl.write("Node Signature: {0}\n".format(node_sig))
