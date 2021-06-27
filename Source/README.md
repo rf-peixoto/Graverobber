@@ -1,4 +1,4 @@
-**graverobber.py**: This file is the payload itself, responsible for identifying the files to infect, sending the originals to the central server, encoding the originals and showing the interface requiring a password.
+**graverobber.py**: This file is the payload itself, responsible for identifying the files to infect, sending the originals to the central server, encoding the originals and showing the interface requiring a password. Normally, ransomware does not have the decoding function in the code itself, but since it is an object of study, it is there.
 
 **trail-blazer.py**: This is the front file, optional utility. It infects a machine from the inside out, identifying the operating system and downloading its payload. In future updates, it will be responsible for mapping (and spreading across) the network, checking external devices. Anyway, it will be the infection module.
 
