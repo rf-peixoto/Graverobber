@@ -1,5 +1,7 @@
 # ========================================================================= #
-# QV1M3R4 1.0
+# This is a variation that criminals used to infect victims a week ago.
+# I got a sample, and although I didn't recover the original file, I believe
+# I reconstructed it as closely as possible.
 # ========================================================================= #
 import os
 import gc
