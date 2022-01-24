@@ -20,7 +20,7 @@ try:
     from AesEverywhere import aes256
 except:
     os.system("pip3 install aes-everywhere")
-    from AesEverywhere import aeseverywhere
+    from AesEverywhere import aes256
 # ========================================================================= #
 # Try to initialize on home:
 # ========================================================================= #
