@@ -12,7 +12,6 @@ import hashlib
 import platform
 import webbrowser
 from tkinter import *
-from time import sleep
 from pathlib import Path
 from random import randint
 from tkinter import messagebox
