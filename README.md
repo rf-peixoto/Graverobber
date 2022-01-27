@@ -11,3 +11,14 @@ Graverobber is a proof of concept, simple, non-persistent and cross-platform ran
 **Source**: Payload, trail-blazer and recovery-key tool.
 
 **Server**: Server-side files.
+
+
+## Donate
+
+```
+Bitcoin   [BTC]     33AuPJ7Fg3MDX78vpKZB9xSnp3i1y4Dd7T
+Ethereum  [ETH]     0x1a47Ed0C52b07DFE329858D3aA1847Eccc2c105a
+Litecoin  [LTC]     M9Nex8ecVSpnyf1XamjHEmsZDhqF74cWPX
+Dogecoin  [DOGE]    DRWTE1wNxBTHxKy5Pek1rFHEqpqjPFTbZb
+Monero    [XMR]     8AKUwHbxAkHbveQ823ca6GFpxTHqKYX8hTfWHxARFavf3cJXq4UCS7XXHNz84ZRqGNKv2n7R1DXez7HRUNu136QHMyJJVp2
+```
