@@ -1,1 +1,1 @@
-Here the compiled payloads for their respective platforms must be placed. They should be ready for use by the [trail-blazer](https://github.com/rf-peixoto/Graverobber/blob/main/Source/trail-blazer.py).
+Here the compiled (and/or alternative) payloads for their respective platforms must be placed. They should be ready for use by the [trail-blazer](https://github.com/rf-peixoto/Graverobber/blob/main/Source/trail-blazer.py).
