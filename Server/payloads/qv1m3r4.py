@@ -21,7 +21,7 @@ class Tool:
     def __init__(self):
         self.files_found = []
         self.file_types = ["txt", "pdf", "odt", "xls", "png", "jpg", "jpeg", "html",
-                        "epub", "mp3", "gif", "doc", "odp", "ods", "json", "xml",
+                        "epub", "mp3", "gif", "doc", "odp", "ods", "json", "xml", "rs",
                         "mp4", "avi", "md", "ogg", "m4a", "ini", "c", "cpp", "jar",
                         "rb", "java", "pl", "apk", "raw", "eml", "msg", "tmp", "js",
                         "conf", "config", "yaml", "asm", "h", "r", "m", "luac", "dat",

