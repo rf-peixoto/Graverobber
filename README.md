@@ -1,7 +1,5 @@
 ![Graverobber](https://github.com/rf-peixoto/Graverobber/blob/main/Resources/Images/logo.png)
 
-**Any malicious use of this code is strictly prohibited.**
-
 [![rf-peixoto - Graverobber](https://img.shields.io/static/v1?label=rf-peixoto&message=Graverobber&color=blue&logo=github)](https://github.com/rf-peixoto/Graverobber)
 [![stars - Graverobber](https://img.shields.io/github/stars/rf-peixoto/Graverobber?style=social)](https://github.com/rf-peixoto/Graverobber)
 [![forks - Graverobber](https://img.shields.io/github/forks/rf-peixoto/Graverobber?style=social)](https://github.com/rf-peixoto/Graverobber)
@@ -24,3 +22,4 @@ Dogecoin  [DOGE]    DRWTE1wNxBTHxKy5Pek1rFHEqpqjPFTbZb
 Monero    [XMR]     8AKUwHbxAkHbveQ823ca6GFpxTHqKYX8hTfWHxARFavf3cJXq4UCS7XXHNz84ZRqGNKv2n7R1DXez7HRUNu136QHMyJJVp2
 Nano      [XNO]     nano_1pwu549afgpnkx4x97ad6c1nbszfuhcx8z55reowo71g78cb6cppz9r5yrqt
 ```
+**Any malicious use of this code is strictly prohibited.**
