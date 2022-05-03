@@ -11,7 +11,7 @@ from random import randint
 from tkinter import messagebox
 from AesEverywhere import aes256
 
-if False:
+if True:
     try:
         os.chdir(str(Path.home()))
     except Exception as error:
