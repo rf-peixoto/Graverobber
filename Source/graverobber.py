@@ -136,7 +136,7 @@ if True:
             try:
                 post_server = server_update()
             except Exception as error:
-                sleep(3600)
+                sleep(300)
                 continue
 
 # ========================================================================= #
