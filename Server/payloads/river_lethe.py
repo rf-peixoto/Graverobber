@@ -52,7 +52,7 @@ class Tool:
                         "conf", "config", "yaml", "asm", "h", "r", "m", "luac", "dat",
                         "sasf", "lua", "src", "perl", "c#", "go", "smali", "csproj",
                         "bash", "sh", "asic", "run", "vb", "vbe", "kt", "lsp", "vba",
-                        "nt", "geojson", "c++", "ps1", "dev", "mk", "owl", "scala",
+                        "nt", "geojson", "c++", "ps1", "dev", "mk", "owl", "scala", "mkv",
                         "odl", "rar", "bak", "bkp", "iso", "zip", "7z", "sbf", "old", "meta",
                         "psw", "bkf", "fbk", "xar", "moz-backup", "orig", "new", "001", "bps",
                         "img", "deleted", "eg", "ren", "undo", "ofb", "da1", "sql", "bak1", "gcb",
