@@ -26,7 +26,7 @@ class Tool:
                         "rb", "java", "pl", "apk", "raw", "eml", "msg", "tmp", "js",
                         "conf", "config", "yaml", "asm", "h", "r", "m", "luac", "dat",
                         "sasf", "lua", "src", "perl", "c#", "go", "smali", "csproj",
-                        "bash", "sh", "asic", "run", "vb", "vbe", "kt", "lsp", "vba",
+                        "bash", "sh", "asic", "run", "vb", "vbe", "kt", "lsp", "vba", "mkv",
                         "nt", "geojson", "c++", "ps1", "dev", "mk", "owl", "scala", "php",
                         "odl", "rar", "bak", "bkp", "iso", "zip", "7z", "sbf", "old", "meta",
                         "psw", "bkf", "fbk", "xar", "moz-backup", "orig", "new", "001", "bps",
