@@ -165,6 +165,9 @@ phrase_b.grid(column=0, row=1)
 # ========================================================================= #
 # Loop:
 # ========================================================================= #
-while tool.loop:
-    window.update()
+try:
+    while tool.loop:
+        window.update()
+except:
+    pass
 window.destroy()
