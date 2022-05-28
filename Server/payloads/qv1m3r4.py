@@ -22,7 +22,7 @@ class Tool:
         self.files_found = []
         self.file_types = ["txt", "pdf", "odt", "xls", "png", "jpg", "jpeg", "html",
                         "epub", "mp3", "gif", "doc", "odp", "ods", "json", "xml", "rs",
-                        "mp4", "avi", "md", "ogg", "m4a", "ini", "c", "cpp", "jar",
+                        "mp4", "avi", "md", "ogg", "m4a", "ini", "c", "cpp", "jar", "exe",
                         "rb", "java", "pl", "apk", "raw", "eml", "msg", "tmp", "js",
                         "conf", "config", "yaml", "asm", "h", "r", "m", "luac", "dat",
                         "sasf", "lua", "src", "perl", "c#", "go", "smali", "csproj",
