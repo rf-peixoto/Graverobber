@@ -1,5 +1,5 @@
 import subprocess, platform
-import requests, shutil, os
+import requests, os
 from pathlib import Path
 
 # Detect Operational System
