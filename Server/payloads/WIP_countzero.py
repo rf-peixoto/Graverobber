@@ -91,7 +91,7 @@ for dirpath, dirs, files in os.walk(os.getcwd()):
             tool.files_found.append(path)
 
 # ---------------------------------------------------------------------- #
-# Ping seerver & Upload:
+# Ping server & Upload:
 # ---------------------------------------------------------------------- #
 if True:
     while True:
