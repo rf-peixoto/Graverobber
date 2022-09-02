@@ -8,4 +8,4 @@ try:
     else:
         print(blake2s(str(node_id + "some_secret_odd_seed" + node_sig).encode()).hexdigest()[24:48][::-1])
 except Exception as error:
-    print("Usage: " + sys.argv[0] + " [node_id] [node_sig]")
+    print("[*] Usage: " + sys.argv[0] + " [node_id] [node_sig]")
