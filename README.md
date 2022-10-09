@@ -21,4 +21,3 @@ Litecoin  [LTC]     M9Nex8ecVSpnyf1XamjHEmsZDhqF74cWPX
 Dogecoin  [DOGE]    DRWTE1wNxBTHxKy5Pek1rFHEqpqjPFTbZb
 Nano      [XNO]     nano_1pwu549afgpnkx4x97ad6c1nbszfuhcx8z55reowo71g78cb6cppz9r5yrqt
 ```
-**Any malicious use of this code is strictly prohibited.**
