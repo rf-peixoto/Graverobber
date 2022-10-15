@@ -45,7 +45,7 @@ for dirpath, dirs, files in os.walk(os.getcwd()):
 node_sig = secrets.token_urlsafe(16)
 
 with open("egg_{0}.txt".format(node_sig), "w") as fl:
-    fl.write("Hello\n")
+    fl.write("Hello, world.\n")
     fl.write("Send a message to our@email.com to get in touch.\n\n")
     fl.write("Node Signature: {0}\n".format(node_sig))
     fl.write("{0} File(s) affected:\n\n".format(len(tool.files_found)))
