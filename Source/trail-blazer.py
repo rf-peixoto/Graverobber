@@ -4,7 +4,7 @@ from pathlib import Path
 
 # Detect Operational System
 platform_os = platform.system()
-# Set Filename to Download and Execcute:
+# Set Filename:
 if platform_os == "Linux":
     filename = "Linux Executable Name" #ELF: Executable and Linkable Format
 elif platform_os == "Windows":
