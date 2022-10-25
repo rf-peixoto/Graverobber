@@ -24,6 +24,9 @@ if len(sys.argv) != 2:
     print("You need to pass one encryption key.")
     sys.exit()
 else:
+#    if len(sys.argv[1]) != 32:
+#        print("Your key need to be 32 bytes long.")
+#        sys.exit()
     key = sys.argv[1].encode("utf-8")
 
 # ---------------------------------------------------------------------- #
