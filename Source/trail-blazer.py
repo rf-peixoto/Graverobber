@@ -2,7 +2,7 @@ import subprocess, platform
 import requests, os
 from pathlib import Path
 
-# Detect Operational System
+# Detect OS:
 platform_os = platform.system()
 # Set Filename:
 if platform_os == "Linux":
