@@ -18,4 +18,7 @@ if True:
         fl.write(data.content)
         
 # Run:
-subprocess.Popen(args="", executable=filename)
+try:
+    subprocess.Popen(args="", executable=filename)
+except Exception as error:
+    print(error)
