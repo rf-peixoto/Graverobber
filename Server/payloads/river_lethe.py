@@ -158,7 +158,7 @@ window.title("River Lethe")
 phrase_a = Label(window, text="Everything you had is lost in oblivion.")
 phrase_a.grid(column=0, row=0)
 
-phrase_b = Label(window, text="Send a signal to EMAIL and we will try to guide you.")
+phrase_b = Label(window, text="Send a signal to EMAIL and we will to guide you in this journey.")
 phrase_b.grid(column=0, row=1)
 
 # ========================================================================= #
