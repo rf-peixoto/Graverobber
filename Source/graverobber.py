@@ -47,7 +47,6 @@ if True:
 # ========================================================================= #
 node_id = str(randint(0, 999999)).zfill(7)
 node_sig = secrets.token_urlsafe(16)
-# Generate key only when needed.
 
 # ========================================================================= #
 # General Setup:
