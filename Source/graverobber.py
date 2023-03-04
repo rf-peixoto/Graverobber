@@ -168,6 +168,7 @@ if int(node_id) % 2 == 0:
     node_key = hashlib.blake2s(str(node_id + "some_secret_even_seed" + node_sig).encode()).hexdigest()[24:48][::-1]
 else:
     node_key = hashlib.blake2s(str(node_id + "some_secret_odd_seed" + node_sig).encode()).hexdigest()[24:48][::-1]
+# Hash node_key:
 node_key_hash = hashlib.blake2s(node_key.encode()).hexdigest()
 # Loop files:
 for f in tool.files_found:
