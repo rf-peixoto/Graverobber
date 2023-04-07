@@ -5,9 +5,9 @@
   $uploadok = 1;
   if ($uploadok == 1) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)){
-      echo "File received.";
+      echo "200 - File received.";
     } else {
-      echo "An error ocurred.";
+      echo "??? - An error ocurred.";
     }
   }
 
