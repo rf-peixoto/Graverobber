@@ -5,7 +5,7 @@
 [![forks - Graverobber](https://img.shields.io/github/forks/rf-peixoto/Graverobber?style=social)](https://github.com/rf-peixoto/Graverobber)
 
 
-Graverobber is a proof of concept, simple, non-persistent and cross-platform ransomware payload. [View in action.](https://www.youtube.com/watch?v=Nqnk2cqwTs8) For security, this malware does not use strong encryption since [the Crypt32 algorithm can now be decoded.](https://www.emsisoft.com/ransomware-decryption-tools/crypt32) Do not forgot to install the dependencies with ```pip -r requirements.txt```. If you have been infected by a ransomware, you can identify it and check if there are any existing solutions using [ID Ransomware](https://id-ransomware.malwarehunterteam.com/index.php).
+Graverobber is a proof of concept, simple, non-persistent, cross-platform and really dumb ransomware payload. [View in action.](https://www.youtube.com/watch?v=Nqnk2cqwTs8) For security, this malware does not use strong encryption since [the Crypt32 algorithm can now be decoded.](https://www.emsisoft.com/ransomware-decryption-tools/crypt32) Do not forgot to install the dependencies with ```pip -r requirements.txt```. If you have been infected by a ransomware, you can identify it and check if there are any existing solutions using [ID Ransomware](https://id-ransomware.malwarehunterteam.com/index.php).
 
 **Evasion and/or obfuscation techniques are not included! Make them yourself.**
 
