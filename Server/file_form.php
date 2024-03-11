@@ -1,5 +1,5 @@
 <?php
-
+  // Just a random form
   $target_dir = "uploads/";
   $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
   $uploadok = 1;
