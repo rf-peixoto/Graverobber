@@ -17,8 +17,6 @@ rule MAL_Graverobber_Main_Python
         $s_bloxplorer = "from bloxplorer import bitcoin_explorer" ascii
         $s_file_form  = "http://{0}.com/file_form.php" ascii
         $s_ping       = "ping -c 1 " ascii
-        $s_targets1   = "\"moz-backup\"" ascii
-        $s_targets2   = "\"resource\"" ascii
 
     condition:
         // Require strong family markers: UI text + crypto + infra pieces
